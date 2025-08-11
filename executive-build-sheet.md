@@ -1,11 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# yes
-
-Here is the one-page “Executive Build Sheet” summarizing all the key components, stacks, and design choices for your local premium media server. This concise overview is ideal for developer handoff or placing alongside your custom instructions in the `/projects/media-server` folder:
-
-***
-
 # Executive Build Sheet — Local Premium Media Server
 
 ### 1. Platform \& Core Stack
