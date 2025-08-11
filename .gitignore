@@ -1,23 +1,53 @@
-# Secrets & sensitive config
-config/https/
-.env
-.env.local
-backend/.env
-*.pem
-*.crt
-*.key
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.temp/
+frontend/.cache/
+frontend/.eslintcache
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.production.local
 
-# OS/IDE junk
+# Python / Backend
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.env
+backend/.coverage
+backend/coverage.xml
+
+# App data (generated/runtime)
+cache/
+logs/
+backups/
+**/*.log
+**/*.pid
+
+# Certificates & private keys
+config/https/server.key
+config/https/server.crt
+config/https/*.pem
+config/https/*.key
+
+# Local OS/editor files
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
 .vscode/
 .idea/
 
-# Cache & build artifacts
-node_modules/
-dist/
-build/
-cache/
-logs/
-__pycache__/
+# Build artifacts
 *.pyc
+*.pyo
+
+# Meilisearch/Redis local dumps (if any)
+meili_data/
+redis_data/
+
+# Sidecar safety (track JSON but not temp)
+**/*.tmp.json

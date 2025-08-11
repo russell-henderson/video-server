@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glass & Glow helpers */
+.glass-panel { @apply p-4 md:p-6; }
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2
+  bg-emerald-500/90 hover:bg-emerald-400 text-black font-semibold
+  focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300;
+}
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2
+  bg-white/10 hover:bg-white/20 text-white
+  focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300;
+}
+
+/* Accessibility */
+:focus-visible { outline: none; }
+
+/* Motion-reduced */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

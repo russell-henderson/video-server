@@ -1,20 +1,7 @@
-import React from "react";
-import GlassPanel from "../components/GlassPanel";
-
-export default function Library() {
-  return (
-    <div className="page-root">
-      <div className="container">
-        <h2 className="section-title">Library</h2>
-        <GlassPanel>
-          <div style={{ padding: 16 }}>
-            <p>
-              This is a placeholder. Wire this view to <code>/api/media</code> with
-              segmented infinite scroll next.
-            </p>
-          </div>
-        </GlassPanel>
-      </div>
-    </div>
-  );
-}
+const Library = () => (
+  <div className="glass-panel">
+    <h1 className="text-2xl font-semibold mb-2">Library</h1>
+    <p className="text-white/70">Browse all media with segmented infinite scroll.</p>
+  </div>
+);
+export default Library;

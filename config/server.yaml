@@ -9,7 +9,7 @@ server:
   port: 8080
   https: true
   cert_path: "config/https/server.crt"
-  key_path: "config/https/server.key"
+  key_path: "config/https/server.pem"
 
 search:
   meili_host: "http://127.0.0.1:7700"
