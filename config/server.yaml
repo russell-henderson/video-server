@@ -1,0 +1,50 @@
+paths:
+  images_root: "G:\\Dev"
+  videos_root: "V:\\local-video-server\\videos"
+  cache_root: "V:\\video-server\\cache"
+  backups_root: "E:\\media-server-backups"
+
+server:
+  host: "0.0.0.0"
+  port: 8080
+  https: true
+  cert_path: "config/https/server.crt"
+  key_path: "config/https/server.key"
+
+search:
+  meili_host: "http://127.0.0.1:7700"
+  refresh_interval_active_s: 10
+
+jobs:
+  broker_url: "redis://127.0.0.1:6379/0"
+  max_workers: 3
+  quiet_hours: "01:00-06:00"
+
+thumbnails:
+  sizes: [256, 512, 1024]
+  video_poster_width: 1280
+  cache_cap_gb: 50
+
+ai:
+  local_first: true
+  openai_fallback: false
+  max_concurrent_jobs: 2
+
+video:
+  transcode:
+    enable_smart: true
+    max_bitrate_mbps: 15
+    codec: "hevc"
+    container: "mp4"
+  subtitles:
+    default_font_family: "Merriweather"
+    default_font_size_pt: 18
+
+security:
+  lan_only: true
+  ip_allowlist: []
+
+retention:
+  trash_days: 60
+  logs_days: 90
+  logs_max_mb: 500

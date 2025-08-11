@@ -1,0 +1,23 @@
+# Secrets & sensitive config
+config/https/
+.env
+.env.local
+backend/.env
+*.pem
+*.crt
+*.key
+
+# OS/IDE junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Cache & build artifacts
+node_modules/
+dist/
+build/
+cache/
+logs/
+__pycache__/
+*.pyc

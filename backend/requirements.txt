@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pydantic
+SQLAlchemy
+alembic
+python-multipart
+Pillow
+opencv-python-headless
+imagehash
+ffmpeg-python
+meilisearch
+redis
+celery[redis]
+tenacity
+python-dateutil
+colorama
+PyYAML
